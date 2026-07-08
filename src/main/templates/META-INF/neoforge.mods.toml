@@ -77,7 +77,21 @@ config="${mod_id}.mixins.json"
     # AFTER - This mod is loaded AFTER the dependency
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
-    side="BOTH"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]] #optional
+modId="quark" #mandatory
+type="required" #mandatory
+versionRange="[4.1-481,)" #mandatory
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]] #optional
+modId="zeta" #mandatory
+type="required" #mandatory
+versionRange="[1.1-38,)" #mandatory
+ordering="AFTER"
+side="BOTH"
 
 # Here's another dependency
 [[dependencies.${mod_id}]]

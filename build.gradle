@@ -133,7 +133,7 @@ dependencies {
     implementation("maven.modrinth:MVARlG2f:1.21.1-1.1-38")
 }
 
-// This block of code expands all declared replace properties in the specified resource targets.
+// This block of code expands all declared replace properties in the specified resource targets
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [

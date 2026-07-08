@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.ccitronella.backwardspickarangs.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PickarangRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
